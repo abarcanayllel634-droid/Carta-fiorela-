@@ -348,8 +348,8 @@ button, .start-btn, .start-button, #startBtn, #startButton {
     }
   }
 
-  $('#start').addEventListener('click', async()=>{
-    $('#start').disabled=true;
+  $('#startBtn').addEventListener('click', async()=>{
+    $('#startBtn').disabled=true;
     intro.classList.add('hidden'); garden.classList.remove('hidden');
     const targets=await plantSeeds();
     await grow(targets);
